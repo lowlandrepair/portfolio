@@ -35,8 +35,7 @@ function ajax(method, url, data, success, error) {
     if (xhr.status === 200) {
       success(xhr.response, xhr.responseType);
 
-      // Paper plane animation
-      // Credit: https://codepen.io/aaroniker/pen/BajabVN
+      
       document.querySelectorAll(".btn-email").forEach((button) => {
         let getVar = (variable) =>
           getComputedStyle(button).getPropertyValue(variable);
