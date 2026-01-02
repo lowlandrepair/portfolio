@@ -696,24 +696,70 @@ header .seperator-skew svg .fill-white {
   }
 }
 .education {
-  background: white;
-  padding-bottom: 3rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 4rem 0;
+  position: relative;
+}
+.education::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #3b82f6);
+  animation: shimmer 3s ease-in-out infinite;
+}
+@keyframes shimmer {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
 }
 .education .container {
   max-width: 900px;
 }
 .education .container h2 {
   text-align: center;
-  color: black;
+  color: #1a202c;
   margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: relative;
+}
+.education .container h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #3b82f6;
+  border-radius: 2px;
 }
 .education .container .education-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 0.15rem 0.6rem rgba(43, 52, 56, 0.15);
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   padding: 40px;
-  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.education .container .education-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+}
+.education .container .education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 .education .container .education-card > *:last-child {
   margin-top: 40px;
@@ -725,22 +771,44 @@ header .seperator-skew svg .fill-white {
 }
 .education .container .education-card .education-card-column {
   display: flex;
+  align-items: flex-start;
 }
 .education .container .education-card .education-card-column .card-column-image {
   flex: 0 0 20%;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
 }
 .education .container .education-card .education-card-column .card-column-image img {
   width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 .education .container .education-card .education-card-column .card-column-large {
   flex: 0 0 80%;
-  padding-left: 1.5rem;
+  padding-left: 2rem;
 }
 .education .container .education-card .education-card-column .card-column-large > * {
-  margin: 0.25rem 0;
+  margin: 0.5rem 0;
 }
 .education .container .education-card .education-card-column .card-column-large h4 {
-  font-weight: normal;
+  font-weight: 600;
+  color: #2d3748;
+}
+.education .container .education-card .education-card-column .card-column-large .education-year {
+  color: #3b82f6;
+  font-weight: 700;
+  font-size: 1.1rem;
+  background: rgba(59, 130, 246, 0.1);
+  padding: 4px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 0.5rem;
 }
 .education .container .education-card .education-card-column .card-column-large ul {
   padding-left: 1.5rem;
@@ -850,90 +918,190 @@ header .seperator-skew svg .fill-white {
 }
 
 .contact {
-  background: white;
-  padding: 3rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 4rem 0;
+  position: relative;
+}
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #3b82f6);
+  animation: shimmer 3s ease-in-out infinite;
 }
 .contact .section-title {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   text-align: center;
+  color: #1a202c;
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: relative;
+}
+.contact .section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #3b82f6;
+  border-radius: 2px;
 }
 .contact .card-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2rem;
   margin-bottom: 3rem;
   flex-wrap: wrap;
 }
 .contact .card-container .card {
-  background: #fff;
-  width: 260px;
-  margin: 20px;
-  padding: 30px;
+  background: white;
+  width: 280px;
+  padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 0.15rem 0.6rem rgba(43, 52, 56, 0.15);
-  border-radius: 3px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(59, 130, 246, 0.1);
+}
+.contact .card-container .card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+}
+.contact .card-container .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 .contact .card-container .card i {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #3b82f6;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   transition: 0.4s;
+  background: rgba(59, 130, 246, 0.1);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.2);
 }
 .contact .card-container .card i:hover {
-  transform: translateY(-20%);
+  transform: translateY(-10%) scale(1.1);
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  color: white;
+}
+.contact .card-container .card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+.contact .card-container .card p,
+.contact .card-container .card a {
+  color: #4a5568;
+  font-size: 1rem;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+.contact .card-container .card a:hover {
+  color: #3b82f6;
 }
 .contact .card-container .card > * {
-  margin: 0.5rem;
+  margin: 0.5rem 0;
 }
 .contact form {
   max-width: 600px;
   margin: 0 auto;
-  border-radius: 3px;
-  box-shadow: 0 0.15rem 0.6rem rgba(43, 52, 56, 0.15);
-  padding: 2rem;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(59, 130, 246, 0.1);
+}
+.contact form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
 }
 .contact form h2 {
   text-align: center;
   margin: 1.5rem 0;
+  color: #1a202c;
+  font-size: 2rem;
+  font-weight: 600;
 }
 .contact form .form-group input {
   margin: 0.75rem 0;
   width: 100%;
-  border-radius: 3px;
-  border: 1px solid #afafaf;
-  padding: 0.75rem;
+  border-radius: 8px;
+  border: 2px solid #e2e8f0;
+  padding: 1rem;
   font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background: #f8f9fa;
 }
 .contact form .form-group input:focus {
   outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  background: white;
 }
 .contact form .form-group textarea {
   width: 100%;
-  border-radius: 3px;
+  border-radius: 8px;
   margin: 0.75rem 0;
-  border: 1px solid #afafaf;
-  padding: 0.75rem;
+  border: 2px solid #e2e8f0;
+  padding: 1rem;
   font-size: 1rem;
   resize: vertical;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background: #f8f9fa;
+  font-family: inherit;
 }
 .contact form .form-group textarea:focus {
   outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  background: white;
 }
 .contact form #status {
   width: 100%;
   text-align: center;
-  margin: 0 auto;
-  border-radius: 3px;
+  margin: 1rem auto 0;
+  border-radius: 8px;
   color: #00b700;
+  font-weight: 500;
+  padding: 0.5rem;
 }
 .contact form #status.success {
   color: #00b700;
+  background: rgba(0, 183, 0, 0.1);
   animation: status 4s ease forwards;
 }
 .contact form #status.error {
-  color: red;
+  color: #dc2626;
+  background: rgba(220, 38, 38, 0.1);
   animation: status 4s ease forwards;
 }
 @keyframes status {
