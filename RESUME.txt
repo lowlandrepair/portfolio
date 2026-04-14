@@ -1,0 +1,120 @@
+DALMAT ADEMI
+Full-Stack Developer | Software Engineer
+Email: dalmat.repair@gmail.com
+Portfolio: https://lowlandrepair.github.io/portfolio/
+LinkedIn: https://www.linkedin.com/in/dalmat-ademi-4b7389314/
+GitHub: https://github.com/lowlandrepair
+
+PROFESSIONAL SUMMARY
+
+Passionate full-stack developer specializing in modern web technologies and game development. Creates robust applications using TypeScript, Python, and C++, with expertise in database design and responsive UI/UX. Currently expanding skills in enterprise-level solutions and interactive gaming experiences. Led multiple programming projects and participated in coding competitions.
+
+TECHNICAL SKILLS
+
+Frontend Development:
+• Languages: TypeScript, JavaScript, HTML5, CSS3
+• Frameworks: React, Vue.js
+• Styling: SCSS, Tailwind CSS, Bootstrap
+• Tools: Git, Webpack, npm, AOS animations
+
+Backend Development:
+• Languages: Python, Java, C++, C#
+• Frameworks: Node.js, Flask, Express.js
+• Databases: PostgreSQL, MySQL, SQLite
+• APIs: RESTful APIs, GraphQL
+
+Game Development:
+• Engines: Unity, Epic Games Launcher
+• Languages: C#, C++
+• Concepts: Game Physics, 3D Graphics, Animation
+
+Other Skills:
+• Version Control: Git, GitHub
+• Platforms: Linux, Shopify
+• Security: Database Security, Encryption Methods
+
+FEATURED PROJECTS
+
+Task Manager Console App | C#
+GitHub: https://github.com/lowlandrepair/task
+• Developed console application for managing project tasks with dependency resolution
+• Implemented scheduling algorithms and critical path calculation
+• Features task dependency analysis and project timeline generation
+
+Mineswepper with AI | Python
+GitHub: https://github.com/lowlandrepair/mineswepper-with-ai
+• Created classic mineswepper game with intelligent AI autoplay functionality
+• Implemented customizable difficulty levels and auto-play algorithm
+• Demonstrates proficiency in Python game development
+
+Computer Auction Platform | Python, Flask, HTML, CSS, Bootstrap
+GitHub: https://github.com/lowlandrepair/computer-auction-
+• Built full-stack web application for computer hardware auctions
+• Implemented user authentication, bidding system, and watchlist functionality
+• Features search functionality and responsive design
+
+Kosova City Care | TypeScript (94.5%), PostgreSQL (2.3%), CSS (1.6%)
+GitHub: https://github.com/lowlandrepair/kosova-city
+• Developed municipal services platform for citizens to access government services
+• Implemented service requests, issue tracking, and community updates
+• Created responsive design with modern UI/UX principles
+
+Kosova Observer | TypeScript (94.4%), PostgreSQL (2.9%), CSS (1.8%)
+GitHub: https://github.com/lowlandrepair/kosova-observer
+• Built modern news website delivering local and international news
+• Implemented article categorization, search functionality, and dynamic content management
+• Demonstrates expertise in TypeScript and PostgreSQL integration
+
+Hotel Lowland | TypeScript (97.8%), HTML, CSS, JavaScript
+GitHub: https://github.com/lowlandrepair/hotel-lowland
+• Created elegant hotel booking platform with reservation management
+• Implemented room reservations, amenity showcases, and guest reviews
+• Features online booking system with modern design
+
+EDUCATION
+
+High School Diploma - Computer Science Track | 2020 - 2025
+
+Specialized Curriculum: Advanced Programming and Software Development
+
+Web Development:
+• Mastered JavaScript, React, HTML5, CSS3, and responsive design principles
+
+Backend Development:
+• Proficient in Python, Java, and server-side programming
+
+Database Management:
+• Designed and implemented relational databases with focus on security and performance optimization
+
+Cybersecurity Fundamentals:
+• Studied database vulnerabilities, encryption methods, and security best practices
+
+Game Development:
+• Developed interactive projects using Unity Engine and Epic Games Launcher
+
+Software Engineering:
+• Applied version control, agile methodologies, and collaborative development practices
+
+Achievements:
+• Led multiple programming projects
+• Participated in coding competitions
+• Contributed to open-source initiatives
+
+KEY ACHIEVEMENTS
+
+• Project Leadership: Successfully led multiple programming projects from conception to deployment
+• Technical Excellence: Demonstrated proficiency across 6+ programming languages and frameworks
+• Modern Development: Expertise in TypeScript-based full-stack development with PostgreSQL
+• Problem Solving: Developed AI algorithms for game development and complex task management systems
+• Open Source: Active contributor to open-source initiatives with public GitHub repositories
+
+PORTFOLIO HIGHLIGHTS
+
+This resume represents a selection of work from a comprehensive portfolio featuring:
+• 6+ diverse projects ranging from console applications to modern web platforms
+• Full-stack development experience with TypeScript, Python, and modern databases
+• Game development projects with AI integration
+• Responsive web design with modern UI/UX principles
+• Enterprise-level application development
+
+Thank you for reviewing my resume. I'm always excited to discuss new opportunities and collaborate on innovative projects!
