@@ -1,24 +1,39 @@
 .projects {
-  background: white;
-  padding: 3rem 0;
+  background: $dark-grey;
+  padding: 6rem 0;
 
   h2,
   h2 span {
     text-align: center;
-    margin-bottom: 3rem;
-    font-weight: bold;
+    margin-bottom: 4rem;
+    font-weight: 800;
+    font-size: 2.5rem;
   }
 
   .project-row {
     display: flex;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+    padding: 2.5rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba($primary, 0.3);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
 
     .project-left {
       width: 50%;
-      margin-right: 2rem;
+      margin-right: 3rem;
       img {
         width: 100%;
-        border: 1px solid lightgray;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        transition: transform 0.4s ease;
       }
     }
     .project-right {
@@ -28,41 +43,44 @@
       justify-content: center;
 
       h3 {
-        font-size: 1.25rem;
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+        color: $white;
+        font-family: $main-font;
+      }
+
+      p {
+        color: rgba($white, 0.7);
+        line-height: 1.7;
       }
 
       .tech-stack-list {
         display: flex;
         flex-wrap: wrap;
         list-style-type: none;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
+        align-items: center;
 
         p {
           margin-right: 1rem;
+          font-weight: 600;
+          color: $grey;
         }
 
         li {
           margin-right: 20px;
-          font-size: 1.5rem;
+          font-size: 1.8rem;
+          transition: transform 0.3s ease;
+
+          &:hover {
+            transform: scale(1.2);
+          }
         }
       }
 
       .project-links {
-        margin-top: 1rem;
+        margin-top: 2rem;
       }
-    }
-
-    #webscraper {
-      background-image: url("../img/top10songs.JPG");
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      // Background image transition only supported in Chrome, Opera, and Safari. Not firefox.
-      -webkit-transition: background-image 0.2s ease-in-out;
-      transition: background-image 0.2s ease-in-out;
-    }
-
-    #webscraper:hover {
-      background-image: url("../img/top10songs.gif");
     }
   }
 }

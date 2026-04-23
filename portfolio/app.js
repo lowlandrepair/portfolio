@@ -173,6 +173,15 @@ function ajax(method, url, data, success, error) {
   xhr.send(data);
 }
 
+// Navbar scroll effect
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 50) {
+    navbar.classList.add("glass");
+  } else {
+    navbar.classList.remove("glass");
+  }
+});
+
 // Back to top arrow button
 
 const backToTopBtn = $("#backToTopBtn");

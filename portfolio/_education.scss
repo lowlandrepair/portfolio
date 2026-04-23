@@ -1,62 +1,93 @@
 .education {
-  background: white;
-  padding-bottom: 3rem;
+  background: $white;
+  padding: 6rem 0;
 
   .container {
-    max-width: 900px;
+    max-width: 1000px;
 
     h2 {
       text-align: center;
-      color: black;
-      margin-bottom: 3rem;
+      color: $dark-grey;
+      margin-bottom: 4rem;
+      font-weight: 800;
+      font-size: 2.5rem;
     }
 
     .education-card {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      box-shadow: 0 0.15rem 0.6rem rgba(43, 52, 56, 0.15);
-      padding: 40px;
-      border-radius: 3px;
-
-      & > *:last-child {
-        margin-top: 40px;
-      }
+      padding: 3rem;
+      border-radius: 20px;
+      background: $white;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(0, 0, 0, 0.05);
 
       @media (max-width: 500px) {
-        padding: 20px;
+        padding: 1.5rem;
       }
 
       .education-card-column {
         display: flex;
+        align-items: flex-start;
+
+        @media (max-width: 768px) {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
 
         .card-column-image {
-          flex: 0 0 20%;
+          flex: 0 0 15%;
           img {
             width: 100%;
+            border-radius: 12px;
           }
         }
 
         .card-column-large {
-          flex: 0 0 80%;
-          padding-left: 1.5rem;
+          flex: 0 0 85%;
+          padding-left: 2rem;
 
-          & > * {
-            margin: 0.25rem 0;
+          @media (max-width: 768px) {
+            padding-left: 0;
+            margin-top: 2rem;
+          }
+
+          .education-year {
+            background: rgba($primary, 0.1);
+            color: $primary;
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
           }
 
           h4 {
-            font-weight: normal;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: $dark-grey;
+            font-family: $main-font;
+            margin-bottom: 0.5rem;
+          }
+
+          p {
+            color: $grey;
+            line-height: 1.6;
+            margin-bottom: 1rem;
           }
 
           ul {
-            padding-left: 1.5rem;
-          }
-
-          hr {
-            border: 0;
-            border-top: 1px solid #eee;
-            margin-top: 40px;
+            padding-left: 1.2rem;
+            li {
+              color: $grey;
+              margin-bottom: 0.5rem;
+              &::marker {
+                color: $primary;
+              }
+            }
           }
         }
       }

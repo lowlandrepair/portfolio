@@ -6,7 +6,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
+  font-family: $body-font;
 }
 
 body {
@@ -24,7 +24,7 @@ a {
 }
 
 .main-font {
-  font-family: "Nunito", sans-serif;
+  font-family: $main-font;
 }
 
 // Utility classes
@@ -130,6 +130,15 @@ a {
   }
 }
 
+// Glassmorphism
+.glass {
+  background: $glass-bg;
+  backdrop-filter: $glass-blur;
+  -webkit-backdrop-filter: $glass-blur;
+  border: 1px solid $glass-border;
+  border-radius: 12px;
+}
+
 #backToTopBtn {
   position: fixed;
   right: 20px;
@@ -138,6 +147,12 @@ a {
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
 
   &.show {
     opacity: 1;
