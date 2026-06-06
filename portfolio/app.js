@@ -2,6 +2,61 @@ const logoName = document.getElementById("logo-name");
 const body = document.querySelector("body");
 const navbar = document.querySelector("nav");
 
+// Hash routing for SPA
+function handleRouting() {
+  const hash = window.location.hash || "#portfolio";
+  const portfolioView = document.getElementById("portfolio-view");
+  const cvView = document.getElementById("cv-view");
+  const navLinks = document.querySelectorAll(".nav-links a, .mobile-menu-links a");
+
+  if (hash === "#cv" || hash === "#resume") {
+    if (portfolioView) portfolioView.style.display = "none";
+    if (cvView) cvView.style.display = "block";
+    window.scrollTo(0, 0);
+
+    navLinks.forEach((link) => {
+      const href = link.getAttribute("href");
+      if (href === "#cv" || href === "#resume") {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  } else {
+    if (portfolioView) portfolioView.style.display = "block";
+    if (cvView) cvView.style.display = "none";
+
+    navLinks.forEach((link) => {
+      const href = link.getAttribute("href");
+      if (href && href.startsWith("#") && href !== "#cv" && href !== "#resume") {
+        if (hash === href) {
+          link.classList.add("active");
+        } else {
+          link.classList.remove("active");
+        }
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  }
+}
+
+window.addEventListener("hashchange", handleRouting);
+window.addEventListener("DOMContentLoaded", handleRouting);
+
+// Copy utility for CV
+function copyToClipboard(text, element) {
+  navigator.clipboard.writeText(text).then(() => {
+    const originalText = element.innerHTML;
+    element.innerHTML = '<i class="fas fa-check"></i> Copied!';
+    element.style.color = '#72d5cc';
+    setTimeout(() => {
+      element.innerHTML = originalText;
+      element.style.color = '';
+    }, 2000);
+  });
+}
+
 window.addEventListener("DOMContentLoaded", function () {
   var form = document.getElementById("contact-form");
 

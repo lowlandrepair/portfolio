@@ -1,0 +1,112 @@
+.experience {
+  padding: 4rem 0 6rem;
+  position: relative;
+  overflow: hidden;
+  background: #0d1f30;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 800;
+    font-size: 2.5rem;
+  }
+
+  .experience-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 2rem;
+    border-left: 2px solid rgba(31, 103, 163, 0.3);
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -2px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, #1f67a3, #72d5cc);
+    }
+  }
+
+  .experience-item {
+    position: relative;
+    margin-bottom: 3.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -2.65rem;
+      top: 0.5rem;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #72d5cc;
+      border: 4px solid #0d1f30;
+      box-shadow: 0 0 10px #72d5cc;
+      z-index: 2;
+    }
+
+    .exp-header {
+      margin-bottom: 1rem;
+
+      .exp-date {
+        font-size: 0.85rem;
+        background: rgba(31, 103, 163, 0.25);
+        color: #72d5cc;
+        padding: 0.25rem 0.75rem;
+        border-radius: 20px;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 0.5rem;
+      }
+
+      h3 {
+        font-family: $main-font;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 0.25rem;
+      }
+
+      h4 {
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+    }
+
+    .exp-desc {
+      color: #cbd5e1;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  }
+
+  .seperator-skew-bottom {
+    height: 60px;
+    overflow: hidden;
+    background: #0d1f30;
+    svg {
+      display: block;
+      width: 100%;
+      height: 60px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .experience {
+    .experience-timeline {
+      padding-left: 1.5rem;
+      .experience-item::before {
+        left: -2.15rem;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

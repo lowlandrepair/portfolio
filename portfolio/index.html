@@ -40,68 +40,67 @@
     </script>
   </head>
   <body>
-    <!-- HEADER -->
-    <header id="header">
-      <div id="particles-js">
-        <nav id="nav" class="glass" data-aos="fade-in">
-          <div class="container nav-container">
-            <a href="index.html" id="logo">
-              <span class="main-font text-blue" style="font-weight: 800; font-size: 1.5rem;">DA</span>
-            </a>
-            <ul class="hide-for-mobile nav-links flex">
+    <!-- NAVIGATION (SHARED) -->
+    <nav id="nav" class="glass" data-aos="fade-in">
+      <div class="container nav-container">
+        <a href="#portfolio" id="logo">
+          <span class="main-font text-blue" style="font-weight: 800; font-size: 1.5rem;">DA</span>
+        </a>
+        <ul class="hide-for-mobile nav-links flex">
+          <li>
+            <a href="#projects" class="link"><i class="fas fa-code"></i> Projects</a>
+          </li>
+          <li>
+            <a href="#skills" class="link"><i class="fas fa-tools"></i> Skills</a>
+          </li>
+          <li>
+            <a href="#experience" class="link"><i class="fas fa-briefcase"></i> Experience</a>
+          </li>
+          <li>
+            <a href="#education" class="link"><i class="fas fa-user-graduate"></i> Education</a>
+          </li>
+          <li>
+            <a href="#cv" class="link"><i class="fas fa-file-alt"></i> Resume</a>
+          </li>
+          <li>
+            <a href="#contact" class="link"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mobile-menu hide-for-desktop">
+        <div class="container">
+          <div class="mobile-menu-links">
+            <ul class="flex">
               <li>
-                <a href="#projects" class="link"
-                  ><i class="fas fa-code"></i> Projects</a
-                >
+                <a href="#projects" class="link blue-hover">Projects</a>
               </li>
               <li>
-                <a href="#skills" class="link"
-                  ><i class="fas fa-tools"></i> Skills</a
-                >
+                <a href="#skills" class="link blue-hover">Skills</a>
               </li>
               <li>
-                <a href="#education" class="link"><i class="fas fa-user-graduate"></i> Education</a
-                >
+                <a href="#experience" class="link blue-hover">Experience</a>
               </li>
               <li>
-                <a href="#contact" class="link"
-                  ><i class="fas fa-envelope"></i> Contact</a
-                >
+                <a href="#education" class="link blue-hover">Education</a>
+              </li>
+              <li>
+                <a href="#cv" class="link blue-hover">Resume</a>
+              </li>
+              <li>
+                <a href="#contact" class="link blue-hover">Contact</a>
               </li>
             </ul>
           </div>
-  
-          <div class="mobile-menu hide-for-desktop">
-            <div class="container">
-              <div class="mobile-menu-links">
-                <ul class="flex">
-                  <li>
-                    <a href="#projects" class="link blue-hover"
-                      >Projects</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#skills" class="link blue-hover"
-                      >Skills</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#education" class="link blue-hover"
-                      >Education</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#contact" class="link blue-hover"
-                      >Contact</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-              
-            </div>
-          </div>
-        </nav>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PORTFOLIO VIEW -->
+    <div id="portfolio-view">
+      <!-- HEADER -->
+      <header id="header">
+        <div id="particles-js">
 
         <!-- HERO -->
         <div class="hero">
@@ -277,35 +276,75 @@
      <!-- SKILLS -->
     <section id="skills" class="skills">
       <div class="seperator-skew-top">
-        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-          <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+        <svg viewBox="0 0 2560 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon style="fill:#121212" points="2560 0 2560 60 0 60"></polygon>
         </svg>
       </div>
-      <div class="container" data-aos="fade-in"> 
+      <div class="container" data-aos="fade-in">
         <h2 class="text-white main-font">Technical <span class="text-blue main-font">Skills</span></h2>
         <ul class="skills-icons">
-          
+          <li><span class="iconify" data-icon="logos:typescript-icon" data-inline="false" data-width="90px" data-height="90px"></span><span>TypeScript</span></li>
           <li><span class="iconify" data-icon="logos:javascript" data-inline="false" data-width="90px" data-height="90px"></span><span>JavaScript</span></li>
           <li><span class="iconify" data-icon="logos:react" data-inline="false" data-width="90px" data-height="90px"></span><span>React</span></li>
-          <li><span class="iconify" data-icon="logos:vue" data-inline="false" data-width="90px" data-height="90px"></span><span class="text-center">Vue</span></li>       
+          <li><span class="iconify" data-icon="logos:nextjs-icon" data-inline="false" data-width="90px" data-height="90px"></span><span>Next.js</span></li>
           <li><span class="iconify" data-icon="logos:nodejs-icon" data-inline="false" data-width="90px" data-height="90px"></span><span>Node.js</span></li>
-          <li><span class="iconify" data-icon="logos:php" data-inline="false" data-width="90px" data-height="90px"></span><span class="text-center">PHP</span></li>       
+          <li><span class="iconify" data-icon="logos:php" data-inline="false" data-width="90px" data-height="90px"></span><span>PHP</span></li>
           <li><span class="iconify" data-icon="logos:python" data-inline="false" data-width="90px" data-height="90px"></span><span>Python</span></li>
-          <li><span class="iconify" data-icon="logos:java" data-inline="false" data-width="90px" data-height="90px"></span><span>Java</span></li>
-          <li><span class="iconify" data-icon="vscode-icons:file-type-html" data-inline="false" data-width="90px" data-height="90px"></span><span>HTML</span></li>
-          <li><span class="iconify" data-icon="vscode-icons:file-type-css" data-inline="false" data-width="90px" data-height="90px"></span><span>CSS</span></li>
-          <li><span class="iconify" data-icon="vscode-icons:file-type-scss2" data-inline="false" data-width="90px" data-height="90px"></span><span>SCSS</span></li>
-          <li><span class="iconify" data-icon="logos:git-icon" data-inline="false" data-width="90px" data-height="90px"></span><span>Git</span></li>
-          <li><span class="iconify" data-icon="logos:bootstrap" data-inline="false" data-width="90px" data-height="90px"></span><span>Bootstrap</span></li>
+          <li><span class="iconify" data-icon="logos:c-plusplus" data-inline="false" data-width="90px" data-height="90px"></span><span>C++</span></li>
           <li><span class="iconify" data-icon="logos:mysql" data-inline="false" data-width="90px" data-height="90px"></span><span>MySQL</span></li>
-          <li><span class="iconify" data-icon="flat-color-icons:linux" data-inline="false" data-width="90px" data-height="90px"></span><span>Linux</span></li>          
-          <li><span class="iconify" data-icon="logos:shopify" data-inline="false" data-width="90px" data-height="90px"></span><span>Shopify</span></li>          
+          <li><span class="iconify" data-icon="logos:postgresql" data-inline="false" data-width="90px" data-height="90px"></span><span>PostgreSQL</span></li>
+          <li><span class="iconify" data-icon="logos:git-icon" data-inline="false" data-width="90px" data-height="90px"></span><span>Git</span></li>
+          <li><span class="iconify" data-icon="logos:tailwindcss-icon" data-inline="false" data-width="90px" data-height="90px"></span><span>Tailwind</span></li>
+          <li><span class="iconify" data-icon="vscode-icons:file-type-scss2" data-inline="false" data-width="90px" data-height="90px"></span><span>SCSS</span></li>
+          <li><span class="iconify" data-icon="flat-color-icons:linux" data-inline="false" data-width="90px" data-height="90px"></span><span>Linux</span></li>
+          <li><span class="iconify" data-icon="logos:supabase-icon" data-inline="false" data-width="90px" data-height="90px"></span><span>Supabase</span></li>
         </ul>
+      </div>
+      <div class="seperator-skew-bottom">
+        <svg viewBox="0 0 2560 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon style="fill:#0d1f30" points="2560 0 2560 60 0 60"></polygon>
+        </svg>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2 class="text-white main-font" data-aos="fade-in">Work <span class="text-blue">Experience</span></h2>
+
+        <div class="experience-timeline">
+          <div class="experience-item" data-aos="fade-up">
+            <div class="exp-header">
+              <span class="exp-date">Jan 2026 - Present</span>
+              <h3>Co-Founder & Lead Software Architect</h3>
+              <h4 class="text-blue">Autorizz / AutoMarket Pro</h4>
+            </div>
+            <p class="exp-desc">Designed a premium automotive marketplace concept for fast vehicle discovery, listing management, and clean buyer-facing browsing. Planned Node.js/Express and MySQL architecture for vehicle specs, users, listings, history records, and multi-tier filtering.</p>
+          </div>
+
+          <div class="experience-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="exp-header">
+              <span class="exp-date">Dec 2025 - Present</span>
+              <h3>Lead Full-Stack Developer</h3>
+              <h4 class="text-blue">Independent / CityCare Project</h4>
+            </div>
+            <p class="exp-desc">Architected a citizen-reporting platform using Next.js, React, PHP, and MySQL for service requests, issue tracking, and community updates. Built a decoupled frontend/backend direction with secure state patterns, schema planning, query reduction, and indexing decisions.</p>
+          </div>
+
+          <div class="experience-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="exp-header">
+              <span class="exp-date">Feb 2026 - Present</span>
+              <h3>Network Engineer / Administrator</h3>
+              <h4 class="text-blue">Independent Projects</h4>
+            </div>
+            <p class="exp-desc">Designed Cisco Packet Tracer topologies covering VLAN routing, DHCP pools, gateways, cross-router communication, subnet planning, and troubleshooting.</p>
+          </div>
+        </div>
       </div>
 
       <div class="seperator-skew-bottom">
-        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-          <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+        <svg viewBox="0 0 2560 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon style="fill:#ffffff" points="2560 0 2560 60 0 60"></polygon>
         </svg>
       </div>
     </section>
@@ -397,12 +436,227 @@
           <div id="status"></div>
         </form>
       </div>
-    </section>
+    </div> <!-- Close portfolio-view -->
+
+    <!-- CV / RESUME VIEW -->
+    <div id="cv-view">
+      <div class="cv-container">
+        <div class="cv-header-bar">
+          <div class="header-info">
+            <h1>DALMAT ADEMI</h1>
+            <h2>Junior Full-Stack Developer</h2>
+            <p>React / Next.js  |  PHP / MySQL  |  Networking</p>
+          </div>
+          <div class="header-photo-wrapper">
+            <img src="dist/img/dalmat_cv_photo.png" alt="Dalmat Ademi Photo">
+            <div class="active-badge"></div>
+          </div>
+        </div>
+
+        <div class="cv-actions">
+          <button class="cv-btn" onclick="window.print()">
+            <i class="fas fa-print"></i> Print / PDF
+          </button>
+          <a class="cv-btn" href="dist/Dalmat_Ademi_CV.pdf" download="Dalmat_Ademi_CV.pdf">
+            <i class="fas fa-download"></i> Download PDF
+          </a>
+        </div>
+
+        <div class="cv-body">
+          <div class="cv-sidebar">
+            <div class="sidebar-section">
+              <h3>Contact</h3>
+              <ul class="contact-list">
+                <li>
+                  <i class="fas fa-envelope"></i>
+                  <a href="javascript:void(0)" onclick="copyToClipboard('dalmat.repair@gmail.com', this)">dalmat.repair@gmail.com</a>
+                </li>
+                <li>
+                  <i class="fab fa-github"></i>
+                  <a href="https://github.com/lowlandrepair" target="_blank">github.com/lowlandrepair</a>
+                </li>
+                <li>
+                  <i class="fab fa-linkedin"></i>
+                  <a href="https://www.linkedin.com/in/dalmat-ademi-4b7389314/" target="_blank">linkedin.com/in/dalmat-ademi</a>
+                </li>
+                <li>
+                  <i class="fas fa-globe"></i>
+                  <a href="https://dalmati.netlify.app" target="_blank">dalmati.netlify.app</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="sidebar-section">
+              <h3>Technical Skills</h3>
+              <div class="skills-group">
+                <h4>Frontend</h4>
+                <div class="skills-tags">
+                  <span>Next.js</span>
+                  <span>React</span>
+                  <span>TypeScript</span>
+                  <span>JavaScript</span>
+                  <span>SCSS</span>
+                  <span>UI/UX</span>
+                </div>
+              </div>
+              <div class="skills-group">
+                <h4>Backend</h4>
+                <div class="skills-tags">
+                  <span>Node.js</span>
+                  <span>Express</span>
+                  <span>PHP</span>
+                  <span>Laravel</span>
+                  <span>MySQL</span>
+                  <span>REST APIs</span>
+                </div>
+              </div>
+              <div class="skills-group">
+                <h4>Systems</h4>
+                <div class="skills-tags">
+                  <span>C++</span>
+                  <span>Python</span>
+                </div>
+              </div>
+              <div class="skills-group">
+                <h4>Networking</h4>
+                <div class="skills-tags">
+                  <span>VLANs</span>
+                  <span>Routing</span>
+                  <span>DHCP</span>
+                  <span>Cisco Packet Tracer</span>
+                </div>
+              </div>
+              <div class="skills-group">
+                <h4>Workflow</h4>
+                <div class="skills-tags">
+                  <span>Git</span>
+                  <span>GitHub</span>
+                  <span>Database Design</span>
+                  <span>Indexing</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-section">
+              <h3>Languages</h3>
+              <ul class="languages-list">
+                <li>Albanian <span>Native / Bilingual</span></li>
+                <li>English <span>Native / Bilingual</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cv-main">
+            <div class="cv-section">
+              <h3>Profile</h3>
+              <p class="cv-summary">
+                Full-stack developer focused on modern web apps, clean UI systems, and practical backend design. Public work includes 22 GitHub repositories across civic tools, auction workflows, news/booking interfaces, task sequencing, and interactive gameplay.
+              </p>
+            </div>
+
+            <div class="cv-section">
+              <h3>Experience</h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="item-header">
+                    <h4>Co-Founder & Lead Software Architect</h4>
+                    <span class="org">Autorizz / AutoMarket Pro</span>
+                    <span class="date">Jan 2026 - Present</span>
+                  </div>
+                  <div class="item-meta">Vushtrri / Prishtina, Kosovo</div>
+                  <ul class="item-bullets">
+                    <li>Designed a premium automotive marketplace concept for fast vehicle discovery, listing management, and clean buyer-facing browsing.</li>
+                    <li>Planned Node.js/Express and MySQL architecture for vehicle specs, users, listings, history records, and multi-tier filtering.</li>
+                  </ul>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="item-header">
+                    <h4>Lead Full-Stack Developer</h4>
+                    <span class="org">Independent / CityCare Project</span>
+                    <span class="date">Dec 2025 - Present</span>
+                  </div>
+                  <div class="item-meta">Prishtina, Kosovo</div>
+                  <ul class="item-bullets">
+                    <li>Architected a citizen-reporting platform using Next.js, React, PHP, and MySQL for service requests, issue tracking, and community updates.</li>
+                    <li>Built a decoupled frontend/backend direction with secure state patterns, schema planning, query reduction, and indexing decisions.</li>
+                  </ul>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="item-header">
+                    <h4>Network Engineer / Administrator</h4>
+                    <span class="org">Independent Projects</span>
+                    <span class="date">Feb 2026 - Present</span>
+                  </div>
+                  <div class="item-meta">Vushtrri / Prishtina, Kosovo</div>
+                  <ul class="item-bullets">
+                    <li>Designed Cisco Packet Tracer topologies covering VLAN routing, DHCP pools, gateways, cross-router communication, subnet planning, and troubleshooting.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <h3>Featured Projects</h3>
+              <div class="cv-projects-list">
+                <div class="cv-project-card">
+                  <div class="proj-header">
+                    <h4>GameHub</h4>
+                    <a href="https://github.com/lowlandrepair/lowland_gamehub" target="_blank">Code <i class="fas fa-external-link-alt"></i></a>
+                  </div>
+                  <p>A high-performance gaming platform built with PHP, MySQL, Tailwind CSS, and JavaScript. Features Bcrypt authentication, dynamic catalogs, and global leaderboards.</p>
+                </div>
+                <div class="cv-project-card">
+                  <div class="proj-header">
+                    <h4>CityCare Kosova</h4>
+                    <a href="https://github.com/lowlandrepair/kosova-city" target="_blank">Code <i class="fas fa-external-link-alt"></i></a>
+                  </div>
+                  <p>A smart city issue reporting platform built with Next.js, React, Supabase, and Tailwind CSS. Enables citizens to report issues and track resolutions in real-time.</p>
+                </div>
+                <div class="cv-project-card">
+                  <div class="proj-header">
+                    <h4>Hotel Lowland</h4>
+                    <a href="https://github.com/lowlandrepair/hotel-lowland" target="_blank">Code <i class="fas fa-external-link-alt"></i></a>
+                  </div>
+                  <p>An elegant hotel booking and management platform built with Remix, TypeScript, and Supabase. Features live room reservation flows and an administrative dashboard.</p>
+                </div>
+                <div class="cv-project-card">
+                  <div class="proj-header">
+                    <h4>TechProwl Auction</h4>
+                    <a href="https://github.com/lowlandrepair/computer-auction-" target="_blank">Code <i class="fas fa-external-link-alt"></i></a>
+                  </div>
+                  <p>A full-featured computer auction marketplace built with Flask, SQLite, and Bootstrap. Includes secure bidding, watchlist management, and dynamic search features.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <h3>Education</h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="item-header">
+                    <h4>High School Diploma, Teknik i Informatikes</h4>
+                    <span class="org">SHMT Lutfi Musiqi</span>
+                    <span class="date">Sep 2024 - Jul 2027</span>
+                  </div>
+                  <ul class="item-bullets">
+                    <li>Specialized curriculum focusing on advanced programming, network design, database security, and software development methodologies.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer id="footer" class="footer">
       <div class="container">
         <div class="footer-flex">
-          <img src="/img/logo.png" alt="logo" id="logo-footer">
+          <a href="#portfolio" id="logo-footer">
+            <span class="main-font text-blue" style="font-weight: 800; font-size: 1.5rem;">DA</span>
+          </a>
 
           <div class="footer-icon-links">
             <a href="https://github.com/lowlandrepair"
@@ -435,16 +689,6 @@
       particlesJS.load('particles-js', './particles.json', function(){
         console.log("particles.json loaded...")
       })
-
-      particlesJS.load('skills', './particles.json', function(){
-        console.log("particles.json loaded...")
-      })
-
-      particlesJS.load('footer', './particles.json', function(){
-        console.log("particles.json loaded...")
-      })
-
-      particlesJS.load()
     </script>
 
     <script defer src="app.js"></script>
