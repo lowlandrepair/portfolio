@@ -655,10 +655,17 @@ header .seperator-skew svg .fill-white {
 .projects .project-row .project-left {
   width: 50%;
   margin-right: 3rem;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.22);
 }
 .projects .project-row .project-left img {
   width: 100%;
-  border-radius: 12px;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   transition: transform 0.4s ease;
 }
@@ -701,6 +708,89 @@ header .seperator-skew svg .fill-white {
 .projects .project-row .project-right .project-links {
   margin-top: 2rem;
 }
+.projects .projects-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.more-projects-page {
+  background: #121212;
+}
+
+.all-projects {
+  background: #121212;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.all-projects-hero {
+  padding: 9rem 0 3rem;
+}
+.all-projects-hero h1 {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  margin: 1rem 0;
+  font-family: "Outfit", sans-serif;
+}
+.all-projects-hero p {
+  max-width: 680px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+.all-projects-hero .back-link {
+  color: #3b82f6;
+  font-weight: 700;
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.all-projects-hero .back-link:hover {
+  color: #ffffff;
+}
+
+.all-projects-grid-section {
+  padding: 1rem 0 5rem;
+}
+
+.all-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card-large {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  overflow: hidden;
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+.project-card-large:hover {
+  transform: translateY(-6px);
+  border-color: rgba(59, 130, 246, 0.42);
+  background: rgba(255, 255, 255, 0.06);
+}
+.project-card-large img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  display: block;
+  object-fit: cover;
+  background: rgba(0, 0, 0, 0.24);
+}
+.project-card-large div {
+  padding: 1.5rem;
+}
+.project-card-large h2 {
+  font-size: 1.45rem;
+  margin-bottom: 0.75rem;
+  font-family: "Outfit", sans-serif;
+}
+.project-card-large p {
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+}
 
 @media screen and (max-width: 860px) {
   .projects .project-row {
@@ -710,9 +800,19 @@ header .seperator-skew svg .fill-white {
   }
   .projects .project-row .project-left {
     width: 100%;
+    margin-right: 0;
+    margin-bottom: 1.5rem;
   }
   .projects .project-row .project-right {
     width: 100%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .all-projects-hero {
+    padding-top: 8rem;
+  }
+  .all-projects-grid {
+    grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 500px) {

@@ -29,9 +29,16 @@
     .project-left {
       width: 50%;
       margin-right: 3rem;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      border-radius: 8px;
+      background: rgba(0, 0, 0, 0.22);
       img {
         width: 100%;
-        border-radius: 12px;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        border-radius: 8px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         transition: transform 0.4s ease;
       }
@@ -83,6 +90,99 @@
       }
     }
   }
+
+  .projects-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
+
+.more-projects-page {
+  background: $dark-grey;
+}
+
+.all-projects {
+  background: $dark-grey;
+  color: $white;
+  min-height: 100vh;
+}
+
+.all-projects-hero {
+  padding: 9rem 0 3rem;
+
+  h1 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    margin: 1rem 0;
+    font-family: $main-font;
+  }
+
+  p {
+    max-width: 680px;
+    color: rgba($white, 0.72);
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  .back-link {
+    color: $primary;
+    font-weight: 700;
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.all-projects-grid-section {
+  padding: 1rem 0 5rem;
+}
+
+.all-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card-large {
+  border: 1px solid rgba($white, 0.08);
+  border-radius: 8px;
+  background: rgba($white, 0.04);
+  overflow: hidden;
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    border-color: rgba($primary, 0.42);
+    background: rgba($white, 0.06);
+  }
+
+  img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+    object-fit: cover;
+    background: rgba(0, 0, 0, 0.24);
+  }
+
+  div {
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.45rem;
+    margin-bottom: 0.75rem;
+    font-family: $main-font;
+  }
+
+  p {
+    color: rgba($white, 0.72);
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 860px) {
@@ -93,12 +193,24 @@
       flex-direction: column;
       .project-left {
         width: 100%;
+        margin-right: 0;
+        margin-bottom: 1.5rem;
         // max-height: 400px;
       }
       .project-right {
         width: 100%;
       }
     }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .all-projects-hero {
+    padding-top: 8rem;
+  }
+
+  .all-projects-grid {
+    grid-template-columns: 1fr;
   }
 }
 
