@@ -1,0 +1,4 @@
+/projects /projects.html 200
+/dist/img/:splat /assets/img/:splat 200
+/img/:splat /assets/img/:splat 200
+
